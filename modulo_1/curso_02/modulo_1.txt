@@ -1,0 +1,73 @@
+BOOTCAMP SPREAD FULLSTACK DEVELOPER
+ALUNO: LEONARDO TRAVAGINI DELBONI
+
+MÓDULO 1 - Conteúdo de Abertura
+
+# Curso de Abertura
+
+# Curso 1 - Lógica de Programação Essencial
+- Apresentação de lógica de programação
+- Flowgorithm, Portugol, resolucao de exercicios
+
+# Curso 2 - Introdução ao Git e ao GitHub
+
+- Apresentação de Git e GitHub
+    - Git e um software de versionamento de codigo criado pelo criador do Linux 
+    - GitHub e um repositorio de codigo online (Microsoft)
+    - Git e GitHub sao ferramentas diferentes
+
+- Comandos importantes para cmd/terminal:
+    - cd (altera diretorio)
+    - dir (diretorio)
+    - clear (limpa a tela em Linux)
+    - cls (limpa a tela em Windows)
+    - mkdir (cria diretorios)
+    - del (deleta arquivos dentro da pasta)
+    - rmdir (deleta diretorios em Windows)
+    - rm -rf (deleta diretorios em Linux)
+
+- Instalando o Git:
+    - https://git-scm.com/downloads (site oficial do Git)
+    - git --version (verifica a versao do git instalada)
+    - git bash (terminal do git no windows)
+    - git config --global user.name "Leonardo Travagini Delboni" (configura o nome do usuario)
+    - git config --global user.email "leonardodelboni@gmail.com" (configura o email do usuario)
+    - git config --global core.editor code (configura o editor de texto padrao, no caso o VS Code)
+    - sudo apt-get install git (instala o git no Linux)
+    - git config --list (lista as configuracoes do git) 
+
+- Funcionamento do Git (SHA1 e a encriptacao, e o COMMIT recebe TREES que apontam para BLOBS, por isso e seguro):
+    - SHA1 (Secure Hash Algorithm 1) e um algoritmo de criptografia que gera um hash de 40 caracteres,
+        que e usado para identificar o commit, por isso o GIT e seguro, rapido e eficiente.
+    - BLOBS (arquivo contendo metadados e o hash do arquivo)
+        # Por exemplo, ambos os comandos abaixo geram o mesmo hash (SHA1), um pelo Git e outro pelo OpenSSL:
+        - echo "Hello World" | git hash-object --stdin (cria um hash (SHA1) para o texto "Hello World" pelo GIT)
+        - echo -e 'blob 6\0Hello World' | openssl sha1 (cria um hash (SHA1) para o texto "Hello World" pelo OpenSSL)
+    - TREES  (apontam para os BLOBS e outras arvores, e contem metadados)
+    - COMMITS (apontam para as TREES, com SHA1, alem do ultimo COMMIT e do autor da modificacao e da timestamp)
+
+- Chaves SSH e TOKENS:
+    - Chaves SSH (Secure Shell) sao chaves criptografadas que permitem a autenticacao segura entre computadores
+        e servidores, e sao usadas para autenticar o usuario no GitHub sem precisar digitar usuario e senha.
+        - 1 SSH Publick Key e 1 SSH Private Key (conexao previa estabelecida sem senha)
+        # Passo-a-passo desde a criacao das chaves no BASH ate cloangem do repositorio em WINDOWS:
+            - git bash (terminal do git no windows)
+            - ssh-keygen -t ed25519 -c leonardodelboni@gmail.com (gera a chave SSH)  e aperte entre para aceitar o local
+            - cat ~/.ssh/id_ed25519.pub (mostra a chave SSH publica), no github colocaremos a Public Key
+            - Copie o conteudo da chave SSH publica e cole no GitHub em Settings/SSH and GPG keys/New SSH key
+            - eval `ssh-agent -s` (inicia o ssh-agent)
+            - ssh-add ~/.ssh/id_ed25519 (adiciona a chave SSH privada)
+            - Va ao repositorio do GitHub que deseja clonar e clique em Code/SSH e copie o link SSH
+            - Volte ao terminal e digite git clone e cole o link SSH copiado do GitHub (que termina com .git)
+            - Confirme (aperte yes) e o repositorio sera clonado no diretorio atual
+        # Passo-a-passo desde a criacao das chaves no BASH ate cloangem do repositorio em LINUX:
+            - ssh-keygen -t ed25519 -c leonardodelboni@gmail.com (gera a chave SSH)  e aperte entre para aceitar o local
+            - cat ~/.ssh/id_ed25519.pub (mostra a chave SSH publica), no github colocaremos a Public Key
+            - Copie o conteudo da chave SSH publica e cole no GitHub em Settings/SSH and GPG keys/New SSH key
+            - eval `ssh-agent -s` (inicia o ssh-agent)
+            - ssh-add ~/.ssh/id_ed25519 (adiciona a chave SSH privada)
+
+    - Tokens sao chaves de autenticacao que permitem o acesso a recursos do GitHub, como repositorios, sem precisar
+        digitar usuario e senha.
+        - Tokens de acesse pessoal (Personal Access Tokens) sao tokens que permitem acesso a recursos do GitHub
+            sem precisar digitar usuario e senha, e sao usados para autenticar o usuario no GitHub.
