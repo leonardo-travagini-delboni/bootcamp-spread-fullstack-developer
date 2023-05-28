@@ -55,7 +55,7 @@ MÓDULO 1 - Conteúdo de Abertura
             - ssh-keygen -t ed25519 -c leonardodelboni@gmail.com (gera a chave SSH)  e aperte entre para aceitar o local
             - cat ~/.ssh/id_ed25519.pub (mostra a chave SSH publica), no github colocaremos a Public Key
             - Copie o conteudo da chave SSH publica e cole no GitHub em Settings/SSH and GPG keys/New SSH key
-            - eval `ssh-agent -s` (inicia o ssh-agent)
+            - eval $(ssh-agent -s) (inicia o ssh-agent)
             - ssh-add ~/.ssh/id_ed25519 (adiciona a chave SSH privada)
             - Va ao repositorio do GitHub que deseja clonar e clique em Code/SSH e copie o link SSH
             - Volte ao terminal e digite git clone e cole o link SSH copiado do GitHub (que termina com .git)
@@ -66,8 +66,25 @@ MÓDULO 1 - Conteúdo de Abertura
             - Copie o conteudo da chave SSH publica e cole no GitHub em Settings/SSH and GPG keys/New SSH key
             - eval `ssh-agent -s` (inicia o ssh-agent)
             - ssh-add ~/.ssh/id_ed25519 (adiciona a chave SSH privada)
+            - Va ao repositorio do GitHub que deseja clonar e clique em Code/SSH e copie o link SSH
+            - Volte ao terminal e digite git clone e cole o link SSH copiado do GitHub (que termina com .git)
+            - Confirme (aperte yes) e o repositorio sera clonado no diretorio atual
 
     - Tokens sao chaves de autenticacao que permitem o acesso a recursos do GitHub, como repositorios, sem precisar
         digitar usuario e senha.
         - Tokens de acesse pessoal (Personal Access Tokens) sao tokens que permitem acesso a recursos do GitHub
             sem precisar digitar usuario e senha, e sao usados para autenticar o usuario no GitHub.
+
+- Comandos importantes para Git:
+    - va na pasta que deseja criar o repositorio usando comando cd
+    - crie uma pasta com o comando mkdir
+    - git init (inicia o repositorio)
+    - liste tudo com o comando ls -a (para o GIT BASH) ou dir (para o CMD)
+    - Para a primeira vez usando GIT e necessario fornecer o autor:
+        - git config --global user.name "Leonardo Travagini Delboni" (configura o nome do usuario)
+        - git config --global user.email "leonardodelboni@gmail.com" (configura o email do usuario)
+    - touch nome_do_arquivo.txt (cria um arquivo txt)
+    - touch nome_do_arquivo.md (cria um arquivo markdown)
+    - git status (verifica o status do repositorio)
+    - git add (adiciona arquivos ao repositorio)
+    - git commit -m "mensagem" (cria um commit com uma mensagem)
