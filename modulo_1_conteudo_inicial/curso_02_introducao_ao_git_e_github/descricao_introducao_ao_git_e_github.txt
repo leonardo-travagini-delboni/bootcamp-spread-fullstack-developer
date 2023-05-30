@@ -25,6 +25,7 @@ MÓDULO 1 - Conteúdo de Abertura
     - del (deleta arquivos dentro da pasta)
     - rmdir (deleta diretorios em Windows)
     - rm -rf (deleta diretorios em Linux)
+    - mv (move arquivos)
 
 - Instalando o Git:
     - https://git-scm.com/downloads (site oficial do Git)
@@ -88,3 +89,26 @@ MÓDULO 1 - Conteúdo de Abertura
     - git status (verifica o status do repositorio)
     - git add (adiciona arquivos ao repositorio)
     - git commit -m "mensagem" (cria um commit com uma mensagem)
+
+- Ciclo de vida do arquivo no Git:
+    - Conmando git init (inicia o repositorio)
+        - Tracked (arquivo rastreado)
+            - Unmodified (arquivo nao modificado)
+            - Modified (arquivo modificado)
+            - Staged (arquivo rastreado, preparado para commit)
+        - Untracked (arquivo nao rastreado)
+    - Comando git status (verifica o status do repositorio)
+    - Comando git add (adiciona arquivos ao repositorio)
+    - Comando git commit -m "mensagem" (cria um commit com uma mensagem)
+    - Comando git pull (atualiza o repositorio local com o repositorio remoto)
+    - Comando git push (atualiza o repositorio remoto com o repositorio local)
+
+- Arquivos markdown:
+    - Arquivos markdown sao arquivos de texto que usam a extensao .md, e sao usados para documentar projetos
+        e criar paginas na web, e sao escritos em linguagem markdown (exemplo: README.md).
+
+- GitHub:
+    - GitHub e uma plataforma de hospedagem de codigo-fonte e arquivos com controle de versao usando o Git.
+    - Conflito de merge:
+        - Ocorre quando duas pessoas modificam o mesmo arquivo ao mesmo tempo, e o GitHub nao consegue decidir
+            qual versao deve ser mantida, e por isso e necessario resolver o conflito manualmente.
