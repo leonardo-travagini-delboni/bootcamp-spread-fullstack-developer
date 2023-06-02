@@ -1,0 +1,183 @@
+# O QUE É INTERNET?
+
+    # História da Internet
+    - ARPANET (1969) - Advanced Research Projects Agency Network
+    - TCP/IP (1983) - Vint Cerf e Bob Kahn
+    - WWW (1991) - World Wide Web, Tim Berners-Lee
+    - Conexão discada no Brasil (1994)
+
+    # Internet Keywords:
+    - IP - Internet Protocol
+    - TCP - Transmission Control Protocol
+    - HTTP - Hypertext Transfer Protocol
+    - FTP - File Transfer Protocol
+    - SMTP - Simple Mail Transfer Protocol
+    - POP - Post Office Protocol
+    - IMAP - Internet Message Access Protocol
+    - DNS - Domain Name System
+    - URL - Uniform Resource Locator
+    - HTML - Hypertext Markup Language
+    - CSS - Cascading Style Sheets
+    - XML - Extensible Markup Language
+    - JSON - JavaScript Object Notation
+    - AJAX - Asynchronous JavaScript and XML
+    - REST - Representational State Transfer
+    - SOAP - Simple Object Access Protocol
+    - WSDL - Web Services Description Language
+
+    # REDES
+    - BACKBONE - Espinha Dorsal, rede principal de conexão entre os computadores
+    - Provedores de Acesso, geralmenteempresas telefonicas, que fornecam sinal de backbone a pessoas e empresas aos BACKBONES
+    - Provedores de Servicos: DIAL-UP, ADSL, CABLE, FIBER, WIRELESS, SATELLITE, P2P, etc
+    - WWW - World Wide Web, é um dos serviços disponíveis na Internet
+    - DNS - Domain Name System, é um serviço que resolve nomes de domínios em endereços IP
+    - URL - Uniform Resource Locator, é um endereço de um recurso disponível na Internet
+    - HTTP - Hypertext Transfer Protocol, é um protocolo de transferência de dados
+    - 127.0.0.1 - Endereço IP do computador local, localhost
+    - LAN - Local Area Network
+
+    # TCP/IP
+        - TCP - Transmission Control Protocol
+        - IP - Internet Protocol
+        - Modelo de camadas: Física (ex: placa de rede), Rede (ex: IP), Transporte (ex: TCP), Aplicação (ex: HTTP)
+        - TCP x UDP: 
+            - TCP é mais lento, mas mais confiável, UDP é mais rápido, mas menos confiável
+            - TCP é seguro e UDP é rápido (ex: livestreaming)
+
+    # Portas
+        - Do inglês ports (que em português seria portos, mas traduziram como portas)
+        - São como "sub-endereços" de um endereço IP, através do qual é feita a conexão com um serviço específico
+        - Exemplo de portas:
+            - FTP: 20 e 21 (transferência de arquivos)
+            - SSH: 22 (conexão segura com o servidor)
+            - DNS: 53 (resolução de nomes de domínios)
+            - HTTP: 80 (requisição simples da internet)
+            - HTTPS: 443 (requisição segura da internet)
+
+    # Modem, switches e roteadores:
+        - Modem: hardware que modula e demodula o sinal de um computador para que ele possa trafegar pela internet (Modem = Modulador + Demodulador)
+        - Switches: distribuem o sinal de internet para vários computadores, mas criado para ser inteligente.
+        - Roteadores: distribuem o sinal de internet para vários computadores, mas criado pode divulgar o recebimento para todos os conectados.
+    
+    # Observações:
+        - Gmail utiliza portas proprias e não as portas padrões de e-mail SMTP e POP3. Quais são elas?
+            - Porta 465 (SSL/TLS): Usada para conexões SMTP sobre SSL/TLS (SMTPS).
+            - Porta 587 (STARTTLS): Usada para conexões SMTP com STARTTLS. É uma opção mais moderna e segura que a porta 465.
+            - Porta 993 (SSL/TLS): Usada para conexões IMAP sobre SSL/TLS (IMAPS).
+            - Porta 995 (SSL/TLS): Usada para conexões POP3 sobre SSL/TLS (POP3S).
+        - Quais são as portas usadas pelo MySQL e pelo APACHE?
+            - MySQL: 3306
+            - Apache: 80 (HTTP) e 443 (HTTPS)
+            - PgAdmin: 5432 (PostgreSQL)
+    
+    # Dados Móveis:
+        - SMS: Short Message Service (servico sem custos de envio de mensagens)
+        - MMS: Multimedia Messaging Service (servico com custos de envio de audio e video)
+        - Conexões móveis:
+            - 1G: 1980, voz. Analógico e 10 kbps.
+            - 2G: 1990, voz e texto. GSM (Global System for Mobile Communication) e 97 kbps.
+            - GPRS (General Package Radio Service): voz e dados em simultaneo.
+            - EDGE (Enhanced Data Rates for GSM Evolution): 128-236 kbps.
+            - 3G: 7 Mbps
+            - 4G: 22,1 Mbps
+            - 5G: 10 Gbps
+    
+    # Wi-Fi:
+        - IEEE 802.11: 2.4 GHz e 2 Mbps
+        - IEEE 802.11a: 5 GHz e 54 Mbps
+        - IEEE 802.11b: 2.4 GHz e 11 Mbps (diminuicao de interferencia)
+        - IEEE 802.11g: 2.4 GHz e 54 Mbps
+        - IEEE 802.11n: 2.4 GHz e 5 GHz e 150-600 Mbps
+    
+    # Segurança do Wi-Fi:
+        - WEP (Wired Equivalent Privacy): 1997, 64 bits e 128 bits
+        - WPA (Wi-Fi Protected Access): 2003, 256 bits. Chave é trocada periodicamente.
+        - WPA2: 2004. AES (Advanced Encryption Standard) e TKIP (Temporal Key Integrity Protocol).
+    
+    # Dispositivos conectados na rede:
+        - SmartTV
+        - Chromecast
+        - Impressora
+        - Scanner
+
+    # Bluetooth:
+    - Conexão ponto-a-ponto, independe de internet
+    - Classe 1: 100mW, 100m
+    - Classe 2: 2,5mW, 10m
+    - Classe 3: 1mW, 1m
+
+    # Browsers:
+    - Softwares que permitem a visualização de páginas web, convertendo o código HTML em páginas web
+    - Plugins: extensões que adicionam funcionalidades ao navegador, como o Adobe Flash Player
+    - Add-ons: extensões que adicionam funcionalidades ao navegador, como o Adblock Plus
+    - Cache: armazenamento temporário de dados, para que não seja necessário baixar novamente
+    - Cookies: pequenos arquivos de texto que armazenam informações sobre o usuário
+
+    # Web-server:
+    - Estático: servidor físico
+    - Dinâmico: servidor virtual
+    
+    # Web-service:
+    - Interface de request de informacoes tais como Correios ou governo
+
+# O QUE SÃO STACKS?
+
+    - Stacks são pilhas de tecnologias que trabalham juntas para criar um produto final dentro da mesma empresa ou projeto
+    - São conhecimentos de linguagem de programação, bancos de dados, capacidade e limitação de performance, etc
+    - Líderes de projetos devem ter conhecimento de todo o projeto desde o front-end até o back-end
+    - Desenvolvedores devem saber todas as ferramentas, limitações e potenciais envolvidos no projeto
+    
+    # FRONT-END
+        - Interface do aplicativo, site ou software
+        - Interface de UI/UX (User Interface / User Experience)
+        - Linguagens de marcação: HTML e MarkDown
+        - Linguagens de estilo: CSS, SASS, LESS, Stylus, jQuery, Bootstrap, Materialize, PHP, etc
+    # BACK-END
+        - Parte "traseiro" do site ou app
+        - Servidores, bancos de dados, 
+        - MySQL, Oracle, protocolos de comunicação, PHP, Java, Node.JS
+    # FULL-STACK
+        - Profissional que consiga trabalhar em todas as camadas de desenvolvimento, tanto Front-end quanto Back-end
+        - Necessita conhecer toda o fluxograma do projeto, desde o início até o fim
+
+# LINGUAGENS DE PROGRAMAÇÃO (LPs)
+    - Linguagens de marcação: HTML, CSS, XML, JSON, YAML, MD, etc
+    - JavaScript (jQuery, AJAX, Node.JS, React.JS, Angular.JS, Vue.JS, etc)
+    - PHP (Laravel, CodeIgniter, CakePHP, etc)
+    - Java (Spring, Hibernate, etc)
+    - C# (ASP.NET, etc)
+    - Python (Django, etc)
+    - Ruby (Ruby on Rails, etc)
+    - Swift (iOS)
+    - Kotlin (Android)
+    - C/C++
+    - Perl
+    - ASP
+
+# Termos:
+    - 404 (erro de página inexistente)
+    - ALT (texto alternativo, técnicas de SEO)
+    - API (Application Programming Interface)
+    - Bootstrap (framework de JavaScript muito)
+    - Cache (armazenamento temporário de dados, para que não seja necessário baixar novamente)
+    - Cookies (armazenamento de dados no navegador)
+    - dll (Dynamic Link Library, conjunto de bibliotecas)
+    - DNS (Domain Name System, sistema de nomes de domínios)
+    - DPI (Dots Per Inch, pontos por polegada)
+    - Favicon (ícone do site)
+    - Framework (conjunto de bibliotecas)
+    - Front-end (parte visual do site)
+    - FTP (File Transfer Protocol, protocolo de transferência de arquivos)
+    - FullStack (profissional que consiga trabalhar em todas as camadas de desenvolvimento, tanto Front-end quanto Back-end)
+    - HHTP (HyperText Transfer Protocol, protocolo de transferência de hipertexto)
+    - IP (Internet Protocol, protocolo de internet)
+    - Meta tags (tags de metadados, técnicas de SEO)
+    - Método Ágil (Scrum, Kanban, etc)
+    - MVC (Model View Controller, modelo de arquitetura de software)
+    - MVP (Model View Presenter, modelo de arquitetura de software)
+    - SSL (Secure Sockets Layer, camada de sockets segura)
+    - UI (User Interface, interface do usuário)
+    - UX (User Experience, experiência do usuário)
+
+# PROJETO FINAL (basico de PHP, CSS com jQuery, HTML e JS)
+    - Contruir um pequeno site usando accordion, tabs, progressbar, etc (ver site do jquery)
